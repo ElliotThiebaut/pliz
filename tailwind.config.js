@@ -12,7 +12,7 @@ module.exports = {
 				'circular-black': [ '"Circular Std Black"', 'serif' ],
 				'circular-bold': [ '"Circular Std Bold"', 'serif' ],
 				'circular-book': [ '"Circular Std Book"', 'serif' ],
-				'circular-black-italic': [ '"Circular Std Black Italic"', 'serif' ]
+				'circular-black-italic': [ '"CircularStd-BlackItalic"', 'serif' ]
 			},
 			height: {
 				'1/10': [ '10%' ],
