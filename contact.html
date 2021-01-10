@@ -13,18 +13,18 @@
     <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/6c1578f983524180fa64138ee780cadf?family=Circular+Std+Black+Italic" rel="stylesheet" type="text/css"/>
 </head>
-<body class="h-screen container mx-auto text-primary-black">
-    <header class="h-1/10 flex items-center flex-row justify-between bg-white">
-        <img src="assets/img/pliz_logo.png" alt="logo" class="h-1/2">
+<body class="h-screen container mx-auto text-white bg-primary-black">
+    <header class="h-1/10 flex items-center flex-row justify-between">
+        <img src="assets/img/pliz_logo-dark.png" alt="logo" class="h-1/2">
         <ul class="flex flex-row w-auto justify-between font-circular-medium text-lg">
+            <li class="pl-20"><a href="index.html">Contexte</a></li>
+            <li class="pl-20"><a href="concept.html">C'est pas compliqué</a></li>
             <li class="pl-20 flex flex-row items-center">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5Z" fill="#53B7B3"/>
                 </svg>
-                <a class="ml-2" href="index.html">Contexte</a>
+                <a class="ml-2" href="contact.html">Allez, donne pliz.</a>
             </li>
-            <li class="pl-20"><a href="concept.html">C'est pas compliqué</a></li>
-            <li class="pl-20"><a href="contact.html">Allez, donne pliz.</a></li>
         </ul>
     </header>
     <main class="h-9/10 flex items-center flex-row justify-between">
@@ -33,8 +33,8 @@
                 <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
                 <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
             </div>
-            <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                <input type="email" placeholder="Email" id="" class="w-full">
+            <div class="flex flex-row border-b-2 border-gray-600 py-1">
+                <input type="email" placeholder="Email" id="" class="w-full text-white placeholder-gray-400 bg-primary-black">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
                     <path d="M11.6147 7.43924L14 12" stroke="white"/>
@@ -44,24 +44,33 @@
         </div>
         <div class="w-1/3 flex justify-center overflow-hidden h-full">
             <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
             </div>
-            <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
+            <div class="outline-dark deco-text-up font-circular-black-italic text-8xl flex flex-row">
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
+                <p class="pb-10">CONTACT</p>
             </div>
         </div>
-        <div class="w-1/3 flex justify-end flex-col">
-            <div class="flex flex-row items-end mb-4">
-                <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">QUI ? QUOI ? COMMENT ?</p>
+        <div class="w-1/3 flex justify-end flex-col bg-white p-20 rounded-lg">
+            <label for="name" class="text-primary-black mb-1 font-circular-medium text-lg">Nom</label>
+            <input type="text" placeholder="Nom" class="placeholder-gray-500 border-b-2 text-primary-black text-lg pb-1 border-gray-300" name="" id="name">
+            <label for="email" class="text-primary-black mt-10 mb-1 font-circular-medium text-lg">Email</label>
+            <input type="email" placeholder="Email" class="placeholder-gray-500 text-primary-black  border-b-2 text-lg pb-1 border-gray-300" name="" id="email">
+            <label for="message" class="text-primary-black mt-10 mb-1 font-circular-medium text-lg">Message</label>
+            <textarea placeholder="Message" class="placeholder-gray-500 text-primary-black  border-b-2 text-lg pb-1 border-gray-300 h-44" name="" id="message"></textarea>
+            <div class="text-primary-black flex flex-row w-full justify-end mt-10 items-center font-circular-medium text-lg">
+                <p>Envoyer</p>
+                <svg class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                    <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                    <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                </svg>  
             </div>
-            <p id="firstDesc" class="font-circular-book ml-4">“Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours très floues”</p>
         </div>
     </main>
 

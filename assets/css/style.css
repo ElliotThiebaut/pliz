@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.deco-text-up{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+}
+
+.deco-text-down{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.outline-white{
+    -webkit-text-stroke: 1px #1D1F1E;
+    -webkit-text-fill-color: white;
+}
+
+.outline-dark{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: #1D1F1E;
+}
