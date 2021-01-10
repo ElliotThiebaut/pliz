@@ -6,8 +6,60 @@
     <title>Pliz.</title>
 
     <link rel="stylesheet" href="assets/css/app.css">
+    <link href="//db.onlinewebfonts.com/c/82e5b6ce5cb6f9942bdd08543ef2c864?family=Circular+Std+Bold+Italic" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/6c1578f983524180fa64138ee780cadf?family=Circular+Std+Black+Italic" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-    <h1 class="text-purple-600">Branch test</h1>
+<body class="h-screen container mx-auto px-8 text-primary-black">
+    <header class="h-1/10 flex items-center flex-row justify-between bg-white">
+        <img src="assets/img/pliz_logo.png" alt="logo" class="h-1/2">
+        <ul class="flex flex-row w-1/3 justify-between font-circular-medium text-lg">
+            <li>Contexte</li>
+            <li>C'est pas compliqué</li>
+            <li>Allez, donne pliz.</li>
+        </ul>
+    </header>
+    <main class="h-9/10 flex items-center flex-row justify-between">
+        <div class="w-1/3 flex flex-col h-1/6 justify-between">
+            <div>
+                <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
+                <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+            </div>
+            <div class="flex flex-row border-b-2 border-gray-200 py-1">
+                <input type="email" placeholder="Email" id="" class="w-full">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                    <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                    <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                </svg>                    
+            </div>
+        </div>
+        <div class="w-1/3 flex justify-center overflow-hidden  h-full">
+            <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+            </div>
+            <div class="deco-text-up font-circular-black-italic text-8xl flex flex-row">
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+                <p class="pb-10">CONTEXT</p>
+            </div>
+        </div>
+        <div class="w-1/3 flex justify-end flex-col">
+            <div class="flex flex-row items-end mb-4">
+                <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
+                <p class="font-circular-black-italic text-3xl">QUI ? QUOI ? COMMENT ?</p>
+            </div>
+            <p class="font-circular-book ml-4">“Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours très floues”</p>
+        </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
