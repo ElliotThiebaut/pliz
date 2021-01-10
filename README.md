@@ -18,7 +18,7 @@
 
 ### 🏠 [Homepage](https://github.com/ElliotThiebaut/pliz#readme)
 
-### ✨ [Demo](pliz.xyz)
+### ✨ [Website](pliz.xyz)
 
 ## Author
 
