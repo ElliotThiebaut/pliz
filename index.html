@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pliz.</title>
+    <title>pliz.</title>
 
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/img/pliz-favicon.png"/>
@@ -22,41 +22,152 @@
             <li class="pl-20"><a href="contact.html">Allez, donne pliz.</a></li>
         </ul>
     </header>
-    <main class="h-9/10 flex items-center flex-row justify-between">
-        <div class="w-1/3 flex flex-col h-1/6 justify-between">
-            <div>
-                <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
-                <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+    <main>
+
+        <div class="fixed bottom-10 rounded-full  right-14 w-16 h-16 bg-primary-black flex items-center justify-center animate-bounce">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="-0.5" x2="23.0542" y2="-0.5" transform="matrix(-0.676166 0.736749 -0.29254 -0.956253 31.5825 0)" stroke-width="2" stroke="#FFFFFF"/>
+                <line y1="-0.5" x2="23.0542" y2="-0.5" transform="matrix(-0.676166 -0.73675 0.29254 -0.956253 16.5884 16.9852)" stroke-width="2" stroke="#FFFFFF"/>
+            </svg>
+        </div>
+
+        <div class="h-9/10 flex items-center flex-row justify-between">
+            <div class="w-1/3 flex flex-col h-1/6 justify-between">
+                <div class="mb-5">
+                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
+                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+                </div>
+                <div class="flex flex-row border-b-2 border-gray-200 py-1">
+                    <input type="email" placeholder="Email" id="" class="w-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                    </svg>                    
+                </div>
             </div>
-            <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                <input type="email" placeholder="Email" id="" class="w-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
-                    <path d="M11.6147 7.43924L14 12" stroke="white"/>
-                    <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
-                </svg>                    
+            <div class="w-1/3 flex justify-center overflow-hidden h-full">
+                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-end flex-col">
+                <div class="flex flex-row items-end mb-4">
+                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
+                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">QUI ? QUOI ? COMMENT ?</p>
+                </div>
+                <p id="firstDesc" class="font-circular-book ml-4">“Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours très floues”</p>
             </div>
         </div>
-        <div class="w-1/3 flex justify-center overflow-hidden h-full">
-            <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
+
+
+        <div class="h-9/10 flex items-center flex-row justify-between">
+            <div class="w-1/3 flex flex-col h-1/6 justify-between">
+                <div class="mb-5">
+                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
+                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+                </div>
+                <div class="flex flex-row border-b-2 border-gray-200 py-1">
+                    <input type="email" placeholder="Email" id="" class="w-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                    </svg>                    
+                </div>
             </div>
-            <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
-                <p class="pb-10">CONTEXT</p>
+            <div class="w-1/3 flex justify-center overflow-hidden h-full">
+                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-end flex-col">
+                <div class="flex flex-row items-end mb-4">
+                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
+                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">Je veux savoir où ça va</p>
+                </div>
+                <p id="firstDesc" class="font-circular-book ml-4">“Je préfère donner directement de la nourriture ou de l’aide concrète quand je veux aider, j’aime pas donner de l’argent, je ne sais pas où ça va après.”</p>
             </div>
         </div>
-        <div class="w-1/3 flex justify-end flex-col">
-            <div class="flex flex-row items-end mb-4">
-                <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">QUI ? QUOI ? COMMENT ?</p>
+
+
+        <div class="h-9/10 flex items-center flex-row justify-between">
+            <div class="w-1/3 flex flex-col h-1/6 justify-between">
+                <div class="mb-5">
+                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
+                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+                </div>
+                <div class="flex flex-row border-b-2 border-gray-200 py-1">
+                    <input type="email" placeholder="Email" id="" class="w-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                    </svg>                    
+                </div>
             </div>
-            <p id="firstDesc" class="font-circular-book ml-4">“Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours très floues”</p>
+            <div class="w-1/3 flex justify-center overflow-hidden h-full">
+                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXT</p>
+                    <p class="pb-10">CONTEXT</p>
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-end flex-col">
+                <div class="flex flex-row items-end mb-4">
+                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
+                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">Les sites pas sécurisés</p>
+                </div>
+                <p id="firstDesc" class="font-circular-book ml-4">“Quand je veux faire un don pour pour une petite association locale, je ne peux généralement pas le faire sur Internet parce que le site ne le propose pas ou n’est pas sécurisé. Il faut que j’envoie un chèque par la poste en 2021. Du coup, je le fais pas”</p>
+            </div>
+        </div>
+
+
+        <div class="h-9/10 flex items-center flex-row justify-between">
+            <div class="w-1/3 flex flex-col h-1/6 justify-between">
+                <div class="mb-5">
+                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
+                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
+                </div>
+                <div class="flex flex-row border-b-2 border-gray-200 py-1">
+                    <input type="email" placeholder="Email" id="" class="w-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
+                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
+                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
+                    </svg>                    
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-center overflow-hidden h-full">
+                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXTE</p>
+                    <p class="pb-10">CONTEXTE</p>
+                </div>
+                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
+                    <p class="pb-10">CONTEXTE</p>
+                    <p class="pb-10">CONTEXTE</p>
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-end flex-col">
+                <div class="flex flex-row items-end mb-4">
+                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
+                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">J’ai pas le temps</p>
+                </div>
+                <p id="firstDesc" class="font-circular-book ml-4">“Bah j’ai juste pas le temps en fait. J’ai pas que ça à gérer de chercher à qui donner, pourquoi donner, comment donner et tout.”</p>
+            </div>
         </div>
     </main>
 
