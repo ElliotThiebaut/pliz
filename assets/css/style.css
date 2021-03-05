@@ -57,7 +57,6 @@
 
 #navBlock{
     height: calc(100vh - 4rem);
-    font-family: circular-black;
     line-height: 2.5;
     background-color: white;
     display: none;
@@ -73,5 +72,37 @@
 }
 
 #firstEmail{
-    width: 90%;
+    width: 95%;
+}
+
+
+.font-circular-black{
+    font-family: circular-black;
+}
+.font-circular-medium{
+    font-family: circular-medium;
+}
+.font-circular-black-italic{
+    font-family: circular-black-italic;
+}
+.font-circular-bold-italic{
+    font-family: circular-bold-italic;
+}
+.font-circular-book{
+    font-family: circular-book;
+}
+
+
+
+.first-section{
+    height: calc(100vh - 4rem);
+}
+
+.black-outline{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.font-flip{
+    transform: scale(-1, -1);
 }

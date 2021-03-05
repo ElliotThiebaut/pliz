@@ -14,6 +14,7 @@
     </head>
     <body class="container px-5 mx-auto">
         <header>
+            <!-- Navbar -->
             <div class="flex justify-between items-center nav h-16 py-5">
                 <div class="logo-container">
                     <img class="logo" src="assets/img/logo-pliz.png" alt="logo pliz" />
@@ -42,30 +43,50 @@
                     />
                 </svg>
             </div>
-        </header>
 
-        <main>
-            <div id="navBlock" class="w-screen flex flex-col justify-center text-2xl max-w-full">
+            <!-- Mobile menu -->
+            <div id="navBlock" class="w-screen flex flex-col justify-center text-2xl max-w-full font-circular-black">
                 <a>Context</a>
                 <a>C'est pas compliqué</a>
                 <a>Allez, donne pliz<span class="plizDot">.</span></a>
             </div>
+        </header>
 
+        <main>
+            <!-- Content -->
             <div id="contentBlock">
-                <div>
-                    <h1>Le don, simplement<span class="plizDot">.</span></h1>
-                    <h2>Allez, donne pliz<span class="plizDot">.</span></h2>
-                    <form action="" class="formBorder flex justify-between">
-                        <input type="email" id="firstEmail" placeholder="E-mail" />
-                        <button type="submit">
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="9.36449" cy="9.46814" rx="9.0213" ry="9.36449" transform="rotate(-90 9.36449 9.46814)" fill="#53B7B3" />
-                                <path d="M9.06299 6.03937L10.9244 9.46803" stroke="white" />
-                                <path d="M10.9245 9.09216L9.06301 12.6856" stroke="white" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+                <!-- Première section -->
+                <section class="first-section flex flex-col justify-around">
+                    <!-- Email form -->
+                    <div class="flex flex-col items-center">
+                        <h1 class="font-circular-black text-2xl">Le don, simplement<span class="plizDot">.</span></h1>
+                        <h2 class="font-circular-medium">Allez, donne pliz<span class="plizDot">.</span></h2>
+                        <form action="" class="formBorder flex justify-between mt-7">
+                            <input type="email" id="firstEmail" placeholder="E-mail" />
+                            <button type="submit">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="9.36449" cy="9.46814" rx="9.0213" ry="9.36449" transform="rotate(-90 9.36449 9.46814)" fill="#53B7B3" />
+                                    <path d="M9.06299 6.03937L10.9244 9.46803" stroke="white" />
+                                    <path d="M10.9245 9.09216L9.06301 12.6856" stroke="white" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- CONTEXT -->
+                    <div class="font-circular-black-italic text-6xl flex flex-col">
+                        <p class="px-5 black-outline text-white">CONTEXT</p>
+                        <p class="px-5 font-flip">CONTEXT</p>
+                    </div>
+
+                    <!-- Questions -->
+                    <div class="flex flex-col items-center">
+                        <p class="font-circular-black-italic uppercase text-2xl mb-1"><span class="plizDot text-4xl -ml-2">.</span>Qui ? Quoi ? Comment ?</p>
+                        <p class="font-circular-book text-center">
+                            "Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours floues"
+                        </p>
+                    </div>
+                </section>
             </div>
         </main>
     </body>
