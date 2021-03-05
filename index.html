@@ -1,177 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pliz.</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pliz.</title>
+        <link rel="shortcut icon" href="assets/img/pliz-favicon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/pliz-favicon.png"/>
-</head>
-<body class="h-screen container mx-auto text-primary-black">
-    <header class="h-1/10 flex items-center flex-row justify-between bg-white">
-        <img src="assets/img/pliz_logo.png" alt="logo" class="h-1/2">
-        <ul class="flex flex-row w-auto justify-between font-circular-medium text-lg">
-            <li class="pl-20 flex flex-row items-center">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5Z" fill="#53B7B3"/>
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <script src="assets/js/app.js" defer></script>
+    </head>
+    <body class="container px-5 mx-auto">
+        <header>
+            <div class="flex justify-between items-center nav h-16 py-5">
+                <div class="logo-container">
+                    <img class="logo" src="assets/img/logo-pliz.png" alt="logo pliz" />
+                </div>
+                <svg id="menuOpen" width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="30" height="3" rx="1.5" fill="#1D1F1E" />
+                    <path
+                        d="M0 9.5C0 8.67157 0.671573 8 1.5 8H22.5C23.3284 8 24 8.67157 24 9.5C24 10.3284 23.3284 11 22.5 11H1.5C0.671573 11 0 10.3284 0 9.5Z"
+                        fill="#1D1F1E"
+                    />
+                    <path
+                        d="M26 9.5C26 8.11929 27.1193 7 28.5 7C29.8807 7 31 8.11929 31 9.5C31 10.8807 29.8807 12 28.5 12C27.1193 12 26 10.8807 26 9.5Z"
+                        fill="#53B7B3"
+                    />
                 </svg>
-                <a class="ml-2" href="index.html">Contexte</a>
-            </li>
-            <li class="pl-20"><a href="concept.html">C'est pas compliqué</a></li>
-            <li class="pl-20"><a href="contact.html">Allez, donne pliz.</a></li>
-        </ul>
-    </header>
-    <main>
 
-        <div class="fixed bottom-10 rounded-full  right-14 w-16 h-16 bg-primary-black flex items-center justify-center animate-bounce">
-            <svg width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-0.5" x2="23.0542" y2="-0.5" transform="matrix(-0.676166 0.736749 -0.29254 -0.956253 31.5825 0)" stroke-width="2" stroke="#FFFFFF"/>
-                <line y1="-0.5" x2="23.0542" y2="-0.5" transform="matrix(-0.676166 -0.73675 0.29254 -0.956253 16.5884 16.9852)" stroke-width="2" stroke="#FFFFFF"/>
-            </svg>
-        </div>
+                <svg id="menuClose" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.34863" y="1.22797" width="30" height="3" rx="1.5" transform="rotate(45 2.34863 1.22797)" fill="#1D1F1E" />
+                    <path
+                        d="M1.76769 23.6881C1.18191 23.1023 1.18191 22.1525 1.76769 21.5668L16.6169 6.71751C17.2027 6.13173 18.1525 6.13173 18.7383 6.71751C19.324 7.3033 19.324 8.25305 18.7383 8.83883L3.88901 23.6881C3.30323 24.2739 2.35348 24.2739 1.76769 23.6881Z"
+                        fill="#1D1F1E"
+                    />
+                    <path
+                        d="M20.1525 5.3033C19.1762 4.32699 19.1762 2.74408 20.1525 1.76777C21.1288 0.791456 22.7118 0.791456 23.6881 1.76777C24.6644 2.74408 24.6644 4.32699 23.6881 5.3033C22.7118 6.27961 21.1288 6.27961 20.1525 5.3033Z"
+                        fill="#53B7B3"
+                    />
+                </svg>
+            </div>
+        </header>
 
-        <div class="h-9/10 flex items-center flex-row justify-between">
-            <div class="w-1/3 flex flex-col h-1/6 justify-between">
-                <div class="mb-5">
-                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
-                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
-                </div>
-                <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                    <input type="email" placeholder="Email" id="" class="w-full">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
-                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
-                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
-                    </svg>                    
-                </div>
+        <main>
+            <div id="navBlock" class="w-screen flex flex-col justify-center text-2xl max-w-full">
+                <a>Context</a>
+                <a>C'est pas compliqué</a>
+                <a>Allez, donne pliz<span class="plizDot">.</span></a>
             </div>
-            <div class="w-1/3 flex justify-center overflow-hidden h-full">
-                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
-                </div>
-                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-end flex-col">
-                <div class="flex flex-row items-end mb-4">
-                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">QUI ? QUOI ? COMMENT ?</p>
-                </div>
-                <p id="firstDesc" class="font-circular-book ml-4">“Je cherche toujours à comprendre plus en détail à quoi va servir mon don, mais les informations sont toujours très floues”</p>
-            </div>
-        </div>
 
-
-        <div class="h-9/10 flex items-center flex-row justify-between">
-            <div class="w-1/3 flex flex-col h-1/6 justify-between">
-                <div class="mb-5">
-                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
-                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
-                </div>
-                <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                    <input type="email" placeholder="Email" id="" class="w-full">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
-                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
-                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
-                    </svg>                    
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-center overflow-hidden h-full">
-                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
-                </div>
-                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
+            <div id="contentBlock">
+                <div>
+                    <h1>Le don, simplement<span class="plizDot">.</span></h1>
+                    <h2>Allez, donne pliz<span class="plizDot">.</span></h2>
+                    <form action="" class="formBorder flex justify-between">
+                        <input type="email" id="firstEmail" placeholder="E-mail" />
+                        <button type="submit">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="9.36449" cy="9.46814" rx="9.0213" ry="9.36449" transform="rotate(-90 9.36449 9.46814)" fill="#53B7B3" />
+                                <path d="M9.06299 6.03937L10.9244 9.46803" stroke="white" />
+                                <path d="M10.9245 9.09216L9.06301 12.6856" stroke="white" />
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="w-1/3 flex justify-end flex-col">
-                <div class="flex flex-row items-end mb-4">
-                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">Je veux savoir où ça va</p>
-                </div>
-                <p id="firstDesc" class="font-circular-book ml-4">“Je préfère donner directement de la nourriture ou de l’aide concrète quand je veux aider, j’aime pas donner de l’argent, je ne sais pas où ça va après.”</p>
-            </div>
-        </div>
-
-
-        <div class="h-9/10 flex items-center flex-row justify-between">
-            <div class="w-1/3 flex flex-col h-1/6 justify-between">
-                <div class="mb-5">
-                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
-                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
-                </div>
-                <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                    <input type="email" placeholder="Email" id="" class="w-full">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
-                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
-                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
-                    </svg>                    
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-center overflow-hidden h-full">
-                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
-                </div>
-                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXT</p>
-                    <p class="pb-10">CONTEXT</p>
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-end flex-col">
-                <div class="flex flex-row items-end mb-4">
-                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">Les sites pas sécurisés</p>
-                </div>
-                <p id="firstDesc" class="font-circular-book ml-4">“Quand je veux faire un don pour pour une petite association locale, je ne peux généralement pas le faire sur Internet parce que le site ne le propose pas ou n’est pas sécurisé. Il faut que j’envoie un chèque par la poste en 2021. Du coup, je le fais pas”</p>
-            </div>
-        </div>
-
-
-        <div class="h-9/10 flex items-center flex-row justify-between">
-            <div class="w-1/3 flex flex-col h-1/6 justify-between">
-                <div class="mb-5">
-                    <h2 class="text-4xl font-circular-black">Le don, simplement<span class="text-primary-green">.</span></h2>
-                    <p class="font-circular-medium text-xl">Allez, donne pliz<span class="text-primary-green">.</span></p>
-                </div>
-                <div class="flex flex-row border-b-2 border-gray-200 py-1">
-                    <input type="email" placeholder="Email" id="" class="w-full">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#53B7B3"/>
-                        <path d="M11.6147 7.43924L14 12" stroke="white"/>
-                        <path d="M14 11.5L11.6147 16.2799" stroke="white"/>
-                    </svg>                    
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-center overflow-hidden h-full">
-                <div class="deco-text-down font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXTE</p>
-                    <p class="pb-10">CONTEXTE</p>
-                </div>
-                <div class="deco-text-up outline-white font-circular-black-italic text-8xl flex flex-row">
-                    <p class="pb-10">CONTEXTE</p>
-                    <p class="pb-10">CONTEXTE</p>
-                </div>
-            </div>
-            <div class="w-1/3 flex justify-end flex-col">
-                <div class="flex flex-row items-end mb-4">
-                    <p class="text-primary-green text-5xl font-circular-black-italic mr-1">.</p>
-                    <p id="firstTitle" class="font-circular-black-italic text-3xl uppercase">J’ai pas le temps</p>
-                </div>
-                <p id="firstDesc" class="font-circular-book ml-4">“Bah j’ai juste pas le temps en fait. J’ai pas que ça à gérer de chercher à qui donner, pourquoi donner, comment donner et tout.”</p>
-            </div>
-        </div>
-    </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
-</body>
+        </main>
+    </body>
 </html>
