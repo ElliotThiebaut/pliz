@@ -2,29 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {font-family: "CircularStd-BlackItalic";
-    src: url("../fonts/6c1578f983524180fa64138ee780cadf.woff2") format("woff2"), /* chrome、firefox */
-  }
+@font-face {
+  font-family: "CircularStd-BlackItalic";
+  src:  url('../fonts/6c1578f983524180fa64138ee780cadf.woff2') format('woff2'),
+  url('../fonts/6c1578f983524180fa64138ee780cadf.woff') format('woff');
+}
 
-@font-face {font-family: "Circular Std Bold Italic";
-    src: url("../fonts/82e5b6ce5cb6f9942bdd08543ef2c864.woff2") format("woff2"), /* chrome、firefox */
-  }
+@font-face {
+  font-family: "Circular Std Bold Italic";
+  src:  url('../fonts/82e5b6ce5cb6f9942bdd08543ef2c864.woff2') format('woff2'),
+  url('../fonts/82e5b6ce5cb6f9942bdd08543ef2c864.woff') format('woff');
+}
 
-@font-face {font-family: "Circular Std Medium";
-    src: url("../fonts/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), /* chrome、firefox */
-  }
+@font-face {
+  font-family: "Circular Std Medium";
+  src:  url('../fonts/9475d6a0b79c164f9f605673714e75d9.woff2') format('woff2'),
+  url('../fonts/9475d6a0b79c164f9f605673714e75d9.woff') format('woff');
+}
 
-@font-face {font-family: "Circular Std Black";
-    src: url("../fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2") format("woff2"), /* chrome、firefox */
-  }
+@font-face {
+  font-family: "Circular Std Black";
+  src:  url('../fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2') format('woff2'),
+  url('../fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.woff') format('woff');
+}
 
-@font-face {font-family: "Circular Std Bold";
-    src: url("../fonts/961a181da27e7cbc072ec2fb5bbfe2a9.woff2") format("woff2"), /* chrome、firefox */
-  }
+@font-face {
+  font-family: "Circular Std Bold";
+  src:  url('../fonts/961a181da27e7cbc072ec2fb5bbfe2a9.woff2') format('woff2'),
+  url('../fonts/961a181da27e7cbc072ec2fb5bbfe2a9.woff') format('woff');
+}
 
-@font-face {font-family: "Circular Std Book";
-    src: url("../fonts/860c3ec7bbc5da3e97233ccecafe512e.woff2") format("woff2"), /* chrome、firefox *//
-  }
+@font-face {
+  font-family: "Circular Std Book";
+  src:  url('../fonts/860c3ec7bbc5da3e97233ccecafe512e.woff2') format('woff2'),
+  url('../fonts/860c3ec7bbc5da3e97233ccecafe512e.woff') format('woff');
+}
 
 .deco-text-up{
     writing-mode: vertical-rl;
